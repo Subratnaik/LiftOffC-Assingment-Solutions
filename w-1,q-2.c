@@ -1,20 +1,24 @@
-#include<stdio.h>
-#include<conio.h>
-void main()
+#include <stdio.h>
+
+int main()
 {
-  int a,b;
-    printf("Enter the value of a=");
-    scanf("%d",&a);
-    printf("Enter the value of b=");
-    scanf("%d",&b);
-    if(a>b)
+    int num1, num2;
+
+    printf("Enter two numbers: ");
+    scanf("%d%d", &num1, &num2);
+
+    if(num1 > num2)
     {
-    printf ("a is maximum");
+    printf("%d is maximum", num1);        
     }
-    else
+    if(num2 > num1)
     {
-    printf("b is maximum");
+    printf("%d is maximum", num2);
     }
-    
-    getch();
+    if(num1 == num2)
+    {
+    printf("Both are equal");
+    }
+
+    return 0;
     }
